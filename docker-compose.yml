@@ -1,16 +1,14 @@
 version: '3.8'
 
-services:
+services: 
   backend:
     build: ./backend
     environment:
-      DATABASE_URL: postgresql://urlshortener:password@postgres:5432/urlshortener
+      DATABASE_URL: postgresql://deep_origin_owner:npg_V75bJtkenids@ep-withered-sea-a5vysgcr-pooler.us-east-2.aws.neon.tech/deep_origin?sslmode=require
       JWT_SECRET: asecretforauth
       BASE_URL: http://localhost:5001
     ports:
       - "5001:5001"
-    depends_on:
-      - postgres
     command: sh -c "npx prisma migrate deploy && npm start"
 
   frontend:
