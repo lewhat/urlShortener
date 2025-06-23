@@ -4,7 +4,7 @@ services:
   backend:
     build: ./backend
     environment:
-      DATABASE_URL: postgresql://deep_origin_owner:npg_V75bJtkenids@ep-withered-sea-a5vysgcr-pooler.us-east-2.aws.neon.tech/deep_origin?sslmode=require
+      DATABASE_URL: postgresql://user:password@localhost/dbname?sslmode=require
       JWT_SECRET: asecretforauth
       BASE_URL: http://localhost:5001
     ports:
