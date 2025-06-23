@@ -1,6 +1,8 @@
 # urlShortener
 ## A full-stack URL shortener application built with React, Node.js, TypeScript, PostgreSQL, and Prisma.
 
+### Demo Url: http://url-shortener.lewhat.net
+
 Core Features
 ```
 ✅ Create shortened URLs from long URLs
