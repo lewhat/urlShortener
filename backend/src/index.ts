@@ -20,8 +20,8 @@ const corsOptions = {
 
 //Rate Limter
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, //15 min
-  max: 100,
+  windowMs: 60 * 1000, //1 min
+  max: 10,
 });
 
 const authLimiter = rateLimit({
