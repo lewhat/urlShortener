@@ -7,7 +7,7 @@
     "start": "node server.js",
     "build": "npm run build:frontend && npm run build:backend",
     "build:frontend": "cd frontend && npm install && npm run build",
-    "build:backend": "cd backend && npm install && npx prisma generate && npm run build",
+    "build:backend": "cd backend && npm install --include=dev && npx prisma generate && npm run build",
     "postinstall": "npm run build",
     "eb:deploy": "npm run build && eb deploy"
   },
